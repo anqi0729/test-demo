@@ -20,7 +20,7 @@ public class IndexController {
 	@RequestMapping("/home")
 //	@ResponseBody
 	public String index(Model model) {
-		System.out.println("gogogo");
+		System.out.println("welcome");
 		return "index";
 	}
 
