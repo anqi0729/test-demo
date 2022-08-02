@@ -89,7 +89,7 @@ class LuceneTestTest {
         IndexSearcher indexSearcher = new IndexSearcher(indexReader);
         //执行搜索，返回TopDocs结果集，第一个参数是查询对象，第二个参数是分页时返回的记录条数
         TopDocs topDocs = indexSearcher.search(query, 10);
-        System.out.println("查询到的数据总条数：" + topDocs.totalHits.value + "条！");
+        System.out.println("查询到的数据总条数：" + topDocs.totalHits + "条！");
         //获取查询结果集，返回ScoreDoc类型数组
         ScoreDoc[]scoreDocs = topDocs.scoreDocs;
         //遍历结果集
