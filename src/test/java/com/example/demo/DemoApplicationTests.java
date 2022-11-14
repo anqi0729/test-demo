@@ -31,7 +31,8 @@ class DemoApplicationTests {
      */
     @Test
     void ExifTester() throws ImageProcessingException, IOException {
-        File file = new File("C:\\Users\\86132\\Desktop\\迪士尼\\2021_07_22_18_51_IMG_1589.JPG");
+//        File file = new File("C:\\Users\\86132\\Desktop\\迪士尼\\2021_07_22_18_51_IMG_1589.JPG");
+        File file = new File("C:\\Users\\86132\\Desktop\\anqibaoxiao\\微信图片_20220810143432.jpg");
         Metadata metadata = ImageMetadataReader.readMetadata(file);
         StringBuffer stringBuffer = new StringBuffer();
         for (Directory directory : metadata.getDirectories()) {
@@ -58,7 +59,9 @@ class DemoApplicationTests {
     void getPicExifInfo() throws ImageProcessingException, IOException {
 //        String fileName = "C:\\Users\\86132\\Desktop\\迪士尼\\2021_07_22_18_51_IMG_1589.JPG";
 //        String fileName = "C:\\Users\\86132\\Pictures\\微信图片_20200615190835.jpg";
-        String fileName = "C:\\Users\\86132\\Pictures\\事务测试.png";
+//        String fileName = "C:\\Users\\86132\\Pictures\\事务测试.png";
+        String fileName = "C:\\Users\\86132\\Desktop\\anqibaoxiao\\微信图片_20220810143432.jpg";
+//        String fileName = "C:\\Users\\86132\\Pictures\\200804200027307675.jpg";
         File file = new File(fileName);
         Metadata metadata = ImageMetadataReader.readMetadata(file);
         Map<String, String> map = new HashMap();

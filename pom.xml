@@ -56,7 +56,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--json-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -100,6 +104,13 @@
 <!--            <artifactId>ik-analyzer</artifactId>-->
 <!--            <version>8.1.0</version>-->
 <!--        </dependency>-->
+
+        <!--Hutool Java工具包-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.0</version>
+        </dependency>
     </dependencies>
 
     <build>
